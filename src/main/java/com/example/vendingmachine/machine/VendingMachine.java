@@ -7,7 +7,6 @@ public class VendingMachine {
 
     public static void main(String[] args) {
         Machine machine = new Machine();
-        machine.getStock().listar();
         UI ui = new UI(machine);
         ui.init();
     }

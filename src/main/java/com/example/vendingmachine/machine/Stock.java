@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 public class Stock {
     ArrayList<Product> stock;
-    Product cocaCola = new Product("Coca-Cola",1,15,15);
-    Product guarana = new Product("Guaraná",1,15,15);
-    Product sprite = new Product("Sprite",1,15,15);
-    Product snack = new Product("Snack",1,15,15);
+    Product cocaCola = new Product("Coca-Cola",1,15,15,0);
+    Product guarana = new Product("Guaraná",1,15,15,0);
+    Product sprite = new Product("Sprite",1,15,15,0);
+    Product snack = new Product("Snack",1,15,15,0);
 
     public Stock() {
         stock = new ArrayList<Product>();
@@ -32,6 +32,10 @@ public class Stock {
             }
         }
         return null;
+    }
+
+    public Product get(int index){
+        return stock.get(index);
     }
 
 }

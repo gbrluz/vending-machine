@@ -7,11 +7,12 @@ public class Product {
     private int stockAmount;
     private int productsSold = 0;
 
-    public Product(String name, int price, int maxAmount, int stockAmount) {
+    public Product(String name, int price, int maxAmount, int stockAmount, int productsSold) {
         this.name = name;
         this.price = price;
         this.maxAmount = maxAmount;
         this.stockAmount = stockAmount;
+        this.productsSold = productsSold;
     }
 
     public void refill(int qtt){
@@ -52,6 +53,10 @@ public class Product {
 
     public void setStockAmount(int stockAmount) {
         this.stockAmount = stockAmount;
+    }
+
+    public void incrementProduct(){
+        this.stockAmount++;
     }
 
     public int getProductsSold() {
